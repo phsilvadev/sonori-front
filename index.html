@@ -1,257 +1,336 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./public/css/style.css" />
-    <title>SONORI</title>
-  </head>
-  <body>
-    <header>
-      <div class="d-flex justify-content-center align-items-center h-full">
-        <div
-          class="container-custom h-full d-flex justify-content-between align-items-center p-0"
-        >
-          <img src="./public/img/logo-sonori.svg" class="image-logo" />
 
-          <div class="d-flex justify-content-start align-items-center gap-5">
-            <ul class="list-group gap-4 list-group-horizontal">
-              <li class="list-item listem-none">
-                <a href="" class="link-light font-montserrat-light"
-                  >Dashboard</a
-                >
-              </li>
-              <li class="list-item listem-none">
-                <a href="" class="link-light font-montserrat-light">Suporte</a>
-              </li>
-              <li class="list-item listem-none">
-                <a href="" class="link-light font-montserrat-light">Perfil</a>
-              </li>
-            </ul>
-            <div
-              class="card-user-perfil-alert p-1 d-flex justify-content-between align-items-center"
-            >
-              <div
-                class="user d-flex justify-content-start align-items-center gap-2"
-              >
-                <img src="./public/img/perfil-user.svg" alt="" />
-                <div class="container-name-position">
-                  <div class="name text-light font-montserrat-light">
-                    Júlio Macedo
-                  </div>
-                  <div
-                    class="position-company text-light font-montserrat-light fs-0625"
-                  >
-                    Assistente Administrativo
-                  </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./public/css/style.css" />
+  <title>SONORI</title>
+</head>
+
+<body>
+  <header>
+    <div class="d-flex justify-content-center align-items-center h-full">
+      <div class="container-custom h-full d-flex justify-content-between align-items-center p-0">
+        <img src="./public/img/logo-sonori.svg" class="image-logo" />
+        <div class="d-flex justify-content-start align-items-center gap-5">
+          <ul class="list-group gap-4 list-group-horizontal">
+            <li class="list-item listem-none">
+              <a href="" class="link-light font-montserrat-light">Dashboard</a>
+            </li>
+            <li class="list-item listem-none">
+              <a href="" class="link-light font-montserrat-light">Suporte</a>
+            </li>
+            <li class="list-item listem-none">
+              <a href="" class="link-light font-montserrat-light">Perfil</a>
+            </li>
+          </ul>
+          <div class="card-user-perfil-alert p-1 d-flex justify-content-between align-items-center">
+            <div class="user d-flex justify-content-start align-items-center gap-2">
+              <img src="./public/img/perfil-user.svg" alt="" />
+              <div class="container-name-position">
+                <div class="name text-light font-montserrat-light">
+                  Júlio Macedo
+                </div>
+                <div class="position-company text-light font-montserrat-light fs-0625">
+                  Assistente Administrativo
                 </div>
               </div>
+            </div>
 
-              <div class="position-relative me-4">
-                <div
-                  class="bell-index position-absolute d-flex justify-content-center align-items-center"
-                >
-                  0
-                </div>
-                <img
-                  src="./public/img/bell.svg"
-                  class="z-index-10 position-relative"
-                />
+            <div class="position-relative me-4">
+              <div class="bell-index position-absolute d-flex justify-content-center align-items-center">
+                0
               </div>
+              <img src="./public/img/bell.svg" class="z-index-10 position-relative" />
             </div>
           </div>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="mt-5 d-flex justify-content-center align-content-center">
-        <div class="container-custom border-top-custom">
-          <div class="row mt-3">
-            <div class="col-12 col-xxl-8 container-informative p-0">
+    </div>
+  </header>
+  <main>
+    <section class="mt-5 d-flex justify-content-center align-content-center">
+      <div class="container-custom border-top-custom ">
+        <div class="row mt-xx-3">
+          <div class="w-60pc container-informative p-0 ">
+            <div
+              class="d-flex justify-content-center justify-content-xxl-start align-items-center h-full flex-column flex-xxl-row">
               <div
-                class="d-flex justify-content-start align-items-center h-full"
-              >
-                <div
-                  class="d-flex justify-content-start align-items-center gap-2 h-full"
-                >
-                  <div class="card-custom-informative">
-                    <div
-                      class="d-flex justify-content-start align-items-center gap-2"
-                    >
-                      <div
-                        class="container-eye d-flex justify-content-center align-items-center"
-                      >
-                        <img
-                          src="./public/img/eye.svg"
-                          style="width: 14px; height: 10px"
-                        />
-                      </div>
-                      <span class="title font-montserrat"
-                        >Resumo da Empresa</span
-                      >
+                class="d-flex justify-content-start justify-content-xx-center justify-content-xxl-start align-items-center gap-2 h-full flex-column flex-xxl-row">
+                <div class="card-custom-informative">
+                  <div class="d-flex justify-content-start align-items-center gap-2">
+                    <div class="container-eye d-flex justify-content-center align-items-center">
+                      <img src="./public/img/eye.svg" style="width: 14px; height: 10px" />
                     </div>
-                    <hr />
-                    <div
-                      class="d-flex justify-content-start align-items-center"
-                    >
-                      <div
-                        class="fs-4-custom p-0 indicator d-flex justify-content-center align-items-center font-montserrat-light"
-                      >
-                        16
-                      </div>
-                      <div class="mt-2 ms-2">
-                        <div
-                          class="text-start description-indicator font-montserrat"
-                        >
-                          Ambientes
-                        </div>
-                        <div
-                          class="text-start sub-description-indicator font-montserrat"
-                        >
-                          cadastrados
-                        </div>
-                      </div>
-                    </div>
+                    <span class="title font-montserrat">Resumo da Empresa</span>
                   </div>
-                  <div class="card-custom-informative">
+                  <hr />
+                  <div class="d-flex justify-content-start align-items-center">
                     <div
-                      class="d-flex justify-content-start align-items-center gap-2"
-                    >
-                      <div
-                        class="container-eye d-flex justify-content-center align-items-center"
-                      >
-                        <img
-                          src="./public/img/eye.svg"
-                          style="width: 14px; height: 10px"
-                        />
-                      </div>
-                      <span class="title font-montserrat">Resumo Mensal</span>
+                      class="fs-4-custom p-0 indicator d-flex justify-content-center align-items-center font-montserrat-light">
+                      16
                     </div>
-                    <hr />
-                    <div
-                      style="height: 80px"
-                      class="d-flex justify-content-start align-items-center position-relative"
-                    >
-                      <div class="w-100">
-                        <div
-                          class="d-flex justify-content-between align-items-center w-100"
-                        >
-                          <div
-                            class="d-flex justify-content-start align-items-center"
-                          >
-                            <div
-                              class="fs-4-custom p-0 indicator d-flex justify-content-center align-items-center font-montserrat-light"
-                            >
-                              100
-                            </div>
-                            <div class="mt-4 ms-1">
-                              <div
-                                class="text-start description-indicator font-montserrat"
-                              >
-                                Visitas
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            class="d-flex justify-content-start align-items-end gap-1 container-indicator-bar"
-                          >
-                            <div
-                              class="d-flex justify-content-center align-items-center flex-column"
-                            >
-                              <div
-                                class="indicator-bar"
-                                style="height: 40px"
-                              ></div>
-                              <div class="font-w-700 font-montserrat fs-0-484">
-                                DEZ
-                              </div>
-                            </div>
-
-                            <div
-                              class="d-flex justify-content-center align-items-center flex-column"
-                            >
-                              <div
-                                class="indicator-bar"
-                                style="height: 57px"
-                              ></div>
-                              <div class="font-w-700 font-montserrat fs-0-484">
-                                DEZ
-                              </div>
-                            </div>
-
-                            <div
-                              class="d-flex justify-content-center align-items-center flex-column"
-                            >
-                              <div
-                                class="indicator-bar"
-                                style="height: 68px"
-                              ></div>
-                              <div class="font-w-700 font-montserrat fs-0-484">
-                                DEZ
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div style="line-height: 0.1">
-                          <span class="color-green">+16%</span>em relação ao
-                          último mês
-                        </div>
+                    <div class="mt-2 ms-2">
+                      <div class="text-start description-indicator font-montserrat">
+                        Ambientes
+                      </div>
+                      <div class="text-start sub-description-indicator font-montserrat">
+                        cadastrados
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col ms-2 border">
-                  <h4
-                    class="text-light font-montserrat-light fs-1029 border"
-                    style="line-height: 0.4"
-                  >
-                    Maior interesse
-                  </h4>
-                  <h1
-                    class="color-green-ligh fs-1411 border"
-                    style="line-height: 0.4"
-                  >
-                    A maior parte dos
-                  </h1>
-                  <h1
-                    class="color-green-ligh fs-1411 border"
-                    style="line-height: 0.4"
-                  >
-                    acessos foi feita no
-                  </h1>
-                  <h1
-                    class="color-green-ligh fs-1411 border"
-                    style="line-height: 0.4"
-                  >
-                    setor de Recepção!
-                  </h1>
-                  <h5
-                    style="line-height: 1; font-size: 11.9px"
-                    class="border text-light"
-                  >
-                    Aproveite para incrementar <br />
-                    sua publicidade e comunicados <br />
-                    em geral nesta área e colha os <br />
-                    benefícios entre seu público.
-                  </h5>
+                <div class="card-custom-informative">
+                  <div class="d-flex justify-content-start align-items-center gap-2">
+                    <div class="container-eye d-flex justify-content-center align-items-center">
+                      <img src="./public/img/eye.svg" style="width: 14px; height: 10px" />
+                    </div>
+                    <span class="title font-montserrat">Resumo Mensal</span>
+                  </div>
+                  <hr />
+                  <div style="height: 80px" class="d-flex justify-content-start align-items-center position-relative">
+                    <div class="w-100">
+                      <div class="d-flex justify-content-between align-items-center w-100">
+                        <div class="d-flex justify-content-start align-items-center">
+                          <div
+                            class="fs-4-custom p-0 indicator d-flex justify-content-center align-items-center font-montserrat-light">
+                            100
+                          </div>
+                          <div class="mt-4 ms-1">
+                            <div class="text-start description-indicator font-montserrat">
+                              Visitas
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-start align-items-end gap-1 container-indicator-bar">
+                          <div class="d-flex justify-content-center align-items-center flex-column">
+                            <div class="indicator-bar" style="height: 40px"></div>
+                            <div class="font-w-700 font-montserrat fs-0-484">
+                              DEZ
+                            </div>
+                          </div>
+
+                          <div class="d-flex justify-content-center align-items-center flex-column">
+                            <div class="indicator-bar" style="height: 57px"></div>
+                            <div class="font-w-700 font-montserrat fs-0-484">
+                              DEZ
+                            </div>
+                          </div>
+
+                          <div class="d-flex justify-content-center align-items-center flex-column">
+                            <div class="indicator-bar" style="height: 68px"></div>
+                            <div class="font-w-700 font-montserrat fs-0-484">
+                              DEZ
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="line-height: 0.1">
+                        <span class="color-green">+16%</span>em relação ao
+                        último mês
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <div class="col  w-full-custom mt-5 mt-xxl-0 ms-xxl-4">
+                <h4 class=" text-light font-montserrat-light fs-1029" style="line-height: 0.4">
+                  Maior interesse
+                </h4>
+                <h1 class="color-green-ligh fs-1411" style="line-height: 0.4">
+                  A maior parte dos
+                </h1>
+                <h1 class="color-green-ligh fs-1411" style="line-height: 0.4">
+                  acessos foi feita no
+                </h1>
+                <h1 class="color-green-ligh fs-1411" style="line-height: 0.4">
+                  setor de Recepção!
+                </h1>
+                <h5 style="line-height: 1;" class="text-light fs-119">
+                  Aproveite para incrementar <br />
+                  sua publicidade e comunicados <br />
+                  em geral nesta área e colha os <br />
+                  benefícios entre seu público.
+                </h5>
+              </div>
             </div>
-            <div class="col-lg-5 col-xxl-4 bg-black p-5"></div>
+            <div class="mt-4">
+              <div class="d-flex justify-content-between align-items-center flex-column-reverse flex-xxl-row ">
+                <div
+                  class="title-consultancy w-full-custom text-start text-xxl-center fs-1856 text-light mt-44 mt-xxl-0">
+                  Consultório
+                  01</div>
+                <div class=" w-100-custom cursor-pointer bg-violet-500 p-3 pb-2 pt-2 d-flex justify-content-between
+                  align-items-center rounded-5">
+                  <div class="me-3 text-light ms-3">Baixe o QR Code</div>
+                  <div class="bg-blur p-3 w-32 h-32 d-flex justify-content-center align-items-center rounded-100 ">
+                    <img src="./public/img/Caminho.svg" class="w-13 h-13">
+                  </div>
+                </div>
+              </div>
+              <div class="overflow-hidden mt-2">
+                <img src="./public/img/banner-consult.svg" class="img-fluid">
+              </div>
+            </div>
           </div>
+          <!-- <div class="col ps-xxl-2 pe-xxl-3">
+            <div class="row">
+              <div class="col">
+                <div class="p-4 card-description">
+                  <h2 class="font-montserrat fs-1681">Descrição</h2>
+                  <div class="font-montserrat">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been
+                    the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                    the
+
+                  </div>
+                </div>
+                <div class="pt-5 bg-blur-900 mt-3 rounded-5 p-4 position-relative ">
+                  <div class="card-video bg-secondary rounded-1375 w-97pc h-209 position-absolute">
+                    <img src="./public/img/banner-play.svg" alt="">
+                    <div
+                      class="container-play rounded-5 bg-violet-500  w-47 h-47 d-flex justify-content-center align-items-center cursor-pointer position-absolute bottom-0">
+                      <img src="./public/img/icon-play.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="container-painel-midia ">
+                    <h5 class="font-montserrat fs-13">Ouça a Audiodescrição</h5>
+                    <h2 class="font-montserrat line-height">Consultório 01</h2>
+                    <div class="d-flex justify-content-start align-items-center">
+                      <div class="container-indicator">
+                        <div class="indicator-progresso"></div>
+                      </div>
+                      <div class="time ms-2">00:00</div>
+                    </div>
+                    <div class="container-icon-painel mt-1 d-flex gap-2">
+                      <img class="cursor-pointer" src="./public/img/audio.svg">
+                      <img class="cursor-pointer" src="./public/img/puse.svg">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-5 ">
+                <h4 class="font-montserrat fs-1681 text-light">
+                  Outros setores
+                </h4>
+                <ul class="listem-none p-0 d-grid gap-2 h-333 overflow-y-scroll scroll-personal pe-2">
+                  <li class="bg-violet-500 p-3 pb-2 pt-2 d-flex justify-content-between align-items-center rounded-21">
+                    <span class="font-montserrat font-w-500 text-light">Recepção 01</span>
+                    <div class="bg-blur p-3 w-32 h-32 d-flex justify-content-center align-items-center rounded-100">
+                      <img src="./public/img/Caminho.svg" class="w-13 h-13">
+                    </div>
+                  </li>
+                  <li class="bg-violet-500 p-3 pb-2 pt-2 d-flex justify-content-between align-items-center rounded-21">
+                    <span class="font-montserrat font-w-500 text-light">Corredor</span>
+                    <div class="bg-blur p-3 w-32 h-32 d-flex justify-content-center align-items-center rounded-100">
+                      <img src="./public/img/Caminho.svg" class="w-13 h-13">
+                    </div>
+                  </li>
+                  <li class="bg-violet-500 p-3 pb-2 pt-2 d-flex justify-content-between align-items-center rounded-21">
+                    <span class="font-montserrat font-w-500 text-light">Cadeira de Exames</span>
+                    <div class="bg-blur p-3 w-32 h-32 d-flex justify-content-center align-items-center rounded-100">
+                      <img src="./public/img/Caminho.svg" class="w-13 h-13">
+                    </div>
+                  </li>
+                  <li class="bg-violet-500 p-3 pb-2 pt-2 d-flex justify-content-between align-items-center rounded-21">
+                    <span class="font-montserrat font-w-500 text-light">Lâmpada de Fenda</span>
+                    <div class="bg-blur p-3 w-32 h-32 d-flex justify-content-center align-items-center rounded-100">
+                      <img src="./public/img/Caminho.svg" class="w-13 h-13">
+                    </div>
+                  </li>
+                  <li class="bg-violet-500 p-3 pb-2 pt-2 d-flex justify-content-between align-items-center rounded-21">
+                    <span class="font-montserrat font-w-500 text-light">Sala de Exames</span>
+                    <div class="bg-blur p-3 w-32 h-32 d-flex justify-content-center align-items-center rounded-100">
+                      <img src="./public/img/Caminho.svg" class="w-13 h-13">
+                    </div>
+                  </li>
+                  <li class="bg-violet-500 p-3 pb-2 pt-2 d-flex justify-content-between align-items-center rounded-21">
+                    <span class="font-montserrat font-w-500 text-light">Recepção 02</span>
+                    <div class="bg-blur p-3 w-32 h-32 d-flex justify-content-center align-items-center rounded-100">
+                      <img src="./public/img/Caminho.svg" class="w-13 h-13">
+                    </div>
+                  </li>
+                  <li class="bg-violet-500 p-3 pb-2 pt-2 d-flex justify-content-between align-items-center rounded-21">
+                    <span class="font-montserrat font-w-500 text-light">Recepção 01</span>
+                    <div class="bg-blur p-3 w-32 h-32 d-flex justify-content-center align-items-center rounded-100">
+                      <img src="./public/img/Caminho.svg" class="w-13 h-13">
+                    </div>
+                  </li>
+                  <li class="bg-violet-500 p-3 pb-2 pt-2 d-flex justify-content-between align-items-center rounded-21">
+                    <span class="font-montserrat font-w-500 text-light">Recepção 01</span>
+                    <div class="bg-blur p-3 w-32 h-32 d-flex justify-content-center align-items-center rounded-100">
+                      <img src="./public/img/Caminho.svg" class="w-13 h-13">
+                    </div>
+                  </li>
+                </ul>
+
+                <div class=" mt-5 p-3 w-full border-top border-black">
+                  <div>
+                    <h5 class="fs-1029">Baixe seus relatórios</h5>
+                    <h4 class="fs-1374 color-violet">Acompanhe todos
+                      os dados de acesso
+                      na sua empresa.
+                    </h4>
+
+                    <div>
+                      <h5 class="fs-0611">Selecione o Período</h5>
+                      <div class="d-grid gap-2">
+                        <div
+                          class="cursor-pointer border border-black p-3 pb-2 pt-2 d-flex justify-content-between align-items-center rounded-5">
+                          <div class="me-3 text-black font">Baixar Relatório</div>
+                          <div class="bg-blur w-32 h-32 d-flex justify-content-center align-items-center rounded-100">
+                            <img src="./public/img/icon-down.svg" class="w-13 h-13">
+                          </div>
+                        </div>
+                        <div
+                          class="cursor-pointer bg-violet-500 p-3 pb-2 pt-2 d-flex justify-content-between align-items-center rounded-5">
+                          <div class="me-3 text-light">Baixar Relatório</div>
+                          <div class="bg-blur w-32 h-32 d-flex justify-content-center align-items-center rounded-100">
+                            <img src="./public/img/Caminho.svg" class="w-13 h-13">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="d-flex justify-content-start align-items-end gap-3">
+              <div>
+                <img src="./public/img/social/brand-instagram.svg" alt="">
+                <span class="fs-075 font-w-700 font-monospace">acessosonori</span>
+              </div>
+              <div>
+                <img src="./public/img/social/brand-whatsapp.svg" alt="">
+                <span class="fs-075 font-w-700">(11) 91212-5125</span>
+              </div>
+              <div>
+                <img src="./public/img/social/brand-whatsapp.svg" alt="">
+                <span class="fs-075 font-w-700 ">(86) 99577-3317</span>
+              </div>
+              <img src="./public/img/Logo_Conrádio.png" class="img-fluid w-72">
+              <img src="./public/img/mulher-da-visao.png" class="img-fluid w-72">
+            </div>
+          </div> -->
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>

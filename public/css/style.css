@@ -7,8 +7,10 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
   height: 100%;
 }
 
@@ -21,6 +23,12 @@ body {
   margin: 0;
   position: relative;
   height: 100%;
+  background: #071224;
+}
+@media (min-width: 1400px) {
+  body {
+    background: none;
+  }
 }
 
 body::after {
@@ -29,9 +37,14 @@ body::after {
   left: 0;
   top: 0;
   width: 100%;
-  height: 60%;
+  height: 100%;
   background: #071224;
   z-index: -1;
+}
+@media (min-width: 1400px) {
+  body::after {
+    height: 60%;
+  }
 }
 
 /**
@@ -57,9 +70,12 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
 }
 
 /**
@@ -67,8 +83,10 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /* Text-level semantics
@@ -85,10 +103,13 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+          text-decoration: underline dotted;
+  /* 2 */
 }
 
 /**
@@ -106,8 +127,10 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /**
@@ -157,10 +180,14 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
 }
 
 /**
@@ -228,12 +255,18 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
 }
 
 /**
@@ -256,8 +289,10 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
 }
 
 /**
@@ -273,8 +308,10 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
 }
 
 /**
@@ -289,8 +326,10 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
 }
 
 /* Interactive
@@ -340,24 +379,16 @@ a {
   font-weight: 300;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .listem-none {
   list-style: none;
 }
 
-.fs-1 {
-  font-size: 1em;
-}
-
-.fs-0625 {
-  font-size: 0.625em;
-}
-
 .z-index-10 {
   z-index: 10;
+}
+
+.line-height {
+  line-height: 0.8;
 }
 
 .border-top-custom {
@@ -365,11 +396,33 @@ a {
 }
 
 .container-custom {
-  width: 90%;
+  width: 85%;
 }
 
-.fs-4-custom {
-  font-size: 4.987em;
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+.scroll-personal::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scroll-personal::-webkit-scrollbar-track {
+  background: #C4C4C4;
+  padding: 10px;
+  /* color of the tracking area */
+}
+
+.scroll-personal::-webkit-scrollbar-thumb {
+  background-color: #4361EE;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  /* creates padding around scroll thumb */
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .color-green {
@@ -380,8 +433,24 @@ a {
   color: #00f188;
 }
 
+.color-violet {
+  color: #4361EE;
+}
+
 .font-w-700 {
   font-weight: 700;
+}
+
+.fs-4-custom {
+  font-size: 4.987em;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.font-w-500 {
+  font-weight: 500;
 }
 
 .fs-0-484 {
@@ -389,11 +458,166 @@ a {
 }
 
 .fs-1411 {
-  font-size: 1.411em;
+  font-size: 2.5em;
+}
+@media (min-width: 1400px) {
+  .fs-1411 {
+    font-size: 1.411em;
+  }
+}
+
+.fs-119 {
+  font-size: 1.5em;
+}
+@media (min-width: 1400px) {
+  .fs-119 {
+    font-size: 11.9px;
+  }
+}
+
+.fs-1 {
+  font-size: 1em;
+}
+
+.fs-0625 {
+  font-size: 0.625em;
 }
 
 .fs-1029 {
-  font-size: 1.029em;
+  font-size: 2em;
+}
+@media (min-width: 1400px) {
+  .fs-1029 {
+    font-size: 1.029em;
+  }
+}
+
+.fs-1681 {
+  font-size: 1.681em;
+}
+
+.fs-0938 {
+  font-size: 0.938em;
+}
+
+.fs-1856 {
+  font-size: 1.856em;
+}
+
+.fs-0611 {
+  font-size: 0.611em;
+}
+
+.fs-1374 {
+  font-size: 1.374em;
+}
+
+.fs-075 {
+  font-size: 0.9em;
+}
+
+.w-13 {
+  width: 13px;
+}
+
+.h-13 {
+  height: 13px;
+}
+
+.w-32 {
+  width: 32px;
+}
+
+.w-60pc {
+  width: 100%;
+}
+@media (min-width: 1400px) {
+  .w-60pc {
+    width: 61%;
+  }
+}
+
+.w-97pc {
+  width: 95%;
+}
+
+.w-47 {
+  width: 47px;
+}
+
+.w-72 {
+  width: 72px;
+}
+
+.w-100-custom {
+  width: 100%;
+}
+@media (min-width: 1400px) {
+  .w-100-custom {
+    width: 214.33px;
+  }
+}
+
+.w-full-custom {
+  width: 100%;
+}
+@media (min-width: 1400px) {
+  .w-full-custom {
+    width: auto;
+  }
+}
+
+.h-47 {
+  height: 47px;
+}
+
+.h-32 {
+  height: 32px;
+}
+
+.h-full {
+  height: none;
+}
+@media (min-width: 1400px) {
+  .h-full {
+    height: 100%;
+  }
+}
+
+.h-333 {
+  height: 333px;
+}
+
+.h-209 {
+  height: 209px;
+}
+
+.bg-blur {
+  background: #0494D4;
+}
+
+.bg-violet-500 {
+  background: #4361EE;
+}
+
+.bg-blur-900 {
+  background: #E7EEFF;
+}
+
+.rounded-100 {
+  border-radius: 100px;
+}
+
+.rounded-21 {
+  border-radius: 21px;
+}
+
+.rounded-1375 {
+  border-radius: 1.375rem;
+}
+
+.pe-12 {
+  padding-left: 12px;
 }
 
 header {
@@ -420,15 +644,22 @@ header .card-user-perfil-alert .bell-index {
   transform: translateX(17px) translateY(-3px);
 }
 
-main .container-informative {
-  height: 192px;
+@media (min-width: 1400px) {
+  main .container-informative {
+    height: 192px;
+  }
 }
 main .container-informative .card-custom-informative {
   background: #e7eeff;
   border-radius: 20px;
-  height: 100%;
+  height: 191px;
   width: 352px;
   padding: 22px;
+}
+@media (min-width: 1400px) {
+  main .container-informative .card-custom-informative {
+    height: 100%;
+  }
 }
 main .container-informative .card-custom-informative .container-eye {
   background: #00af63;
@@ -459,4 +690,36 @@ main .container-informative .card-custom-informative .container-indicator-bar {
   position: absolute;
   bottom: -16px;
   right: 0;
+}
+main .card-description {
+  border-radius: 10px;
+  background: #F1F1F1;
+  height: 410px;
+}
+main .card-video {
+  left: 0;
+  top: 0;
+  transform: translate(7px, -50px);
+}
+main .card-video .container-play {
+  overflow: hidden;
+  right: 0;
+  transform: translate(-39px, 23px);
+}
+main .container-painel-midia {
+  margin-top: 140px;
+}
+main .container-indicator {
+  background: #C4C4C4;
+  width: 100%;
+  padding: 5px;
+  position: relative;
+}
+main .indicator-progresso {
+  background: #4361EE;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 40%;
+  position: absolute;
 }/*# sourceMappingURL=style.css.map */

@@ -1,13 +1,21 @@
 main {
   .container-informative {
-    height: 192px;
+
+
+    @media (min-width: $breakpoint-XX-Large) {
+      height: 192px;
+    }
 
     .card-custom-informative {
       background: #e7eeff;
       border-radius: 20px;
-      height: 100%;
+      height: 191px;
       width: 352px;
       padding: 22px;
+
+      @media (min-width: $breakpoint-XX-Large) {
+        height: 100%;
+      }
 
       .container-eye {
         background: #00af63;
@@ -20,6 +28,7 @@ main {
       .title {
         font-size: 1.029em;
       }
+
       .description-indicator {
         font-size: 1.5em;
       }
@@ -45,5 +54,45 @@ main {
         right: 0;
       }
     }
+  }
+
+  .card-description {
+    border-radius: 10px;
+    background: #F1F1F1;
+    height: 410px;
+  }
+
+  .card-video {
+    left: 0;
+    top: 0;
+    transform: translate(7px, -50px);
+
+    .container-play {
+      overflow: hidden;
+      right: 0;
+      transform: translate(-39px, 23px);
+    }
+  }
+
+  .container-painel-midia {
+    margin-top: 140px;
+  }
+
+  .container-indicator {
+    background: #C4C4C4;
+    width: 100%;
+    padding: 5px;
+    position: relative;
+  }
+
+  .indicator-progresso {
+    background: #4361EE;
+
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    // z-index: 1;
   }
 }
